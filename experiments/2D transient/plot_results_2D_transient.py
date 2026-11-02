@@ -718,11 +718,24 @@ markers = {
     "dht": "3",
     "qt": "4",
 }
+
+labels = {
+    "h": "$h$",
+    "T": "$T$",
+    "R": "$R$",
+    "Sy": "$S$",
+    "dhx": "dhx",
+    "qx": "$Q_x$",
+    "dht": "dht",
+    "qt": "$Q_t$",
+    }
+
 for var in variables:
+    
     plt.plot(
         iteration_plot,
         avg_log_fraction_per_variable[var],
-        label=var,
+        label=labels[var],
         color=plot_colors[var],
         marker= markers[var]
     )

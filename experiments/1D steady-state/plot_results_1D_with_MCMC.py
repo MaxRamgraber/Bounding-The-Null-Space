@@ -622,7 +622,7 @@ plt.gca().set_xticks(xpos)
 plt.gca().set_xticklabels([])
 plt.grid(axis='y', lw=0.4, color='#ccc', zorder=0)
 plt.gca().set_xlim(xlims)
-plt.title(r"$\mathbf{B}:$ Darcy flow $q_{j \rightarrow i}$", loc="left")
+plt.title(r"$\mathbf{B}:$ Darcy flow $Q_{j \rightarrow i}$", loc="left")
 plt.yscale('symlog', linthresh=1E-4)
 plt.ylim(-2E0,2E0)
 

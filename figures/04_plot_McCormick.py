@@ -211,7 +211,7 @@ ax2d = plt.subplot(gs[0,1])
 plt.ylim(-5.,5.)
 plt.xlim(-0.5,0.5)
 
-plt.xlabel(r"flow $q_{j \rightarrow i}$ [m³/s]",loc="right", labelpad = -35)
+plt.xlabel(r"flow $Q_{j \rightarrow i}$ [m³/s]",loc="right", labelpad = -35)
 plt.ylabel(r"head gradient dhx$_{j,i}$ [-]",loc="top", labelpad = 0)
 
 plt.gca().spines["left"].set_position("zero")
@@ -452,7 +452,7 @@ ax3d.plot(
 
 
 ax3d.set_xlabel(r"transmissivity $T_{j,i}$"+"\n"+"[m$^2$/s]",labelpad=10)
-ax3d.set_ylabel(r"flow $q_{j \rightarrow i}$ [m³/s]")
+ax3d.set_ylabel(r"flow $Q_{j \rightarrow i}$ [m³/s]")
 ax3d.set_zlabel(r"head gradient dhx$_{j,i}$ [-]")
 
 ax3d.set_xlim(T_min, T_max)
